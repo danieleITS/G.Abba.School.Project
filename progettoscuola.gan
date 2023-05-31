@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-05-31" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3247" locale="it_IT">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-05-31" view-index="1" gantt-divider-location="351" resource-divider-location="300" version="3.2.3247" locale="it_IT">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd3" name="Nome" width="200" order="0"/>
@@ -40,14 +40,20 @@
         <task id="3" name="Sprint review" meeting="false" start="2023-05-31" duration="1" complete="0" expand="true"/>
     </tasks>
     <resources>
-        <resource id="0" name="Gennaro Amarante" function="Default:0" contacts="" phone=""/>
-        <resource id="1" name="Loris Manfrin" function="Default:0" contacts="" phone=""/>
-        <resource id="2" name="Daniele Onida" function="Default:0" contacts="" phone=""/>
-        <resource id="3" name="Fabrizio Lisci" function="Default:0" contacts="" phone=""/>
+        <resource id="0" name="Gennaro Amarante" function="1" contacts="" phone=""/>
+        <resource id="1" name="Loris Manfrin" function="3" contacts="" phone=""/>
+        <resource id="2" name="Daniele Onida" function="4" contacts="" phone=""/>
+        <resource id="3" name="Fabrizio Lisci" function="2" contacts="" phone=""/>
     </resources>
     <allocations/>
     <vacations/>
     <previous/>
     <roles roleset-name="Default"/>
     <roles roleset-name="SoftwareDevelopment"/>
+    <roles>
+        <role id="1" name="Responsabile della progettazione e analisi (Diagrammi UML)"/>
+        <role id="2" name="Sviluppatore"/>
+        <role id="3" name="Tester e documentatore"/>
+        <role id="4" name="Responsabile della demo finale e della presentazione"/>
+    </roles>
 </project>
