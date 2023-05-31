@@ -1,4 +1,4 @@
-# Gastandi Abba School Project
+# Gastaldi Abba School Project
 
 ## Esercizio di gruppo per Ingegneria del Software
 
