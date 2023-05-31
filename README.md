@@ -1,3 +1,3 @@
-# Test-ITS
+# Gastandi Abba School Project
 
-## Esercizio per Ingegneria del Software
+## Esercizio di gruppo per Ingegneria del Software
