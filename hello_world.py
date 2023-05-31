@@ -9,3 +9,4 @@ hello world("print")
   oh god("print")
   system.out.println("sono un comando di python")
   //ora ho capito come si committa
+  puoi committare
