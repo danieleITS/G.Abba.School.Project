@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-05-27" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3247" locale="it_IT">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-05-26" view-index="0" gantt-divider-location="351" resource-divider-location="448" version="3.2.3247" locale="it_IT">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd3" name="Nome" width="200" order="0"/>
@@ -7,15 +7,15 @@
         <option id="filter.completedTasks" value="false"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nome" width="210" order="0"/>
-        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
+        <field id="0" name="Nome" width="176" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="268" order="1"/>
     </view>
     <!-- -->
     <calendars>
         <day-types>
             <day-type id="0"/>
             <day-type id="1"/>
-            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <default-week id="1" name="default" sun="1" mon="1" tue="1" wed="0" thu="1" fri="1" sat="0"/>
             <only-show-weekends value="false"/>
             <overriden-day-types/>
             <days/>
@@ -34,39 +34,39 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Progetto Scuola - Gruppo G.Abba" color="#8cb6ce" meeting="false" start="2023-05-29" duration="3" complete="0" thirdDate="2023-05-31" thirdDate-constraint="0" expand="true">
-            <task id="4" name="Creazione GitHub" meeting="false" start="2023-05-30" duration="1" complete="0" expand="false">
-                <task id="18" name="Modifica Pagina Principale" meeting="false" start="2023-05-30" duration="1" complete="0" expand="true"/>
-                <task id="17" name="Aggiornamento Documentazione" meeting="false" start="2023-05-30" duration="1" complete="0" expand="true"/>
+        <task id="0" name="Progetto Scuola - Gruppo G.Abba" color="#8cb6ce" meeting="false" start="2023-05-31" duration="8" complete="0" thirdDate="2023-05-31" thirdDate-constraint="0" expand="true">
+            <task id="27" name="Creazione Github" color="#8cb6ce" meeting="false" start="2023-05-31" duration="1" complete="0" thirdDate="2023-05-29" thirdDate-constraint="0" expand="true">
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="19" name="Diagrammi UML e Gantt" color="#8cb6ce" meeting="false" start="2023-05-31" duration="1" complete="0" thirdDate="2023-05-30" thirdDate-constraint="0" expand="false">
-                <task id="8" name="Progetto Gantt" meeting="false" start="2023-05-31" duration="1" complete="0" expand="true"/>
-                <task id="7" name="Diagramma di Sequenza" meeting="false" start="2023-05-31" duration="1" complete="0" expand="true"/>
-                <task id="6" name="Diagramma Casi D'uso" meeting="false" start="2023-05-31" duration="1" complete="0" expand="true"/>
-                <task id="5" name="Diagramma di Classe" color="#8cb6ce" meeting="false" start="2023-05-31" duration="1" complete="0" thirdDate="2023-05-31" thirdDate-constraint="0" expand="true"/>
+            <task id="28" name="Scrumban" color="#8cb6ce" meeting="false" start="2023-05-31" duration="1" complete="0" thirdDate="2023-05-29" thirdDate-constraint="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="14" name="Presentazione finale del lavoro di gruppo" meeting="false" start="2023-05-31" duration="1" complete="0" expand="false">
-                <task id="9" name="Canva" meeting="false" start="2023-05-31" duration="1" complete="0" expand="true"/>
+            <task id="6" name="Diagramma Casi D'uso" color="#8cb6ce" meeting="false" start="2023-06-10" duration="1" complete="0" thirdDate="2023-06-03" thirdDate-constraint="0" expand="true">
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="16" name="Applicazione" meeting="false" start="2023-05-29" duration="3" complete="0" expand="false">
-                <task id="13" name="Test e Documentazione del prodotto realizzato" meeting="false" start="2023-05-29" duration="3" complete="0" expand="false">
-                    <task id="23" name="Scrittura su txt Documentazione" meeting="false" start="2023-05-29" duration="1" complete="0" expand="true"/>
-                    <task id="22" name="Aggiornamento Kanban/Scrum" meeting="false" start="2023-05-29" duration="1" complete="0" expand="true"/>
-                    <task id="21" name="Weekly review" meeting="false" start="2023-05-29" duration="1" complete="0" expand="true"/>
-                    <task id="11" name="Creazione delle User Stories e della loro priorità da inserire nel blacklog" color="#8cb6ce" meeting="false" start="2023-05-31" duration="1" complete="0" thirdDate="2023-05-31" thirdDate-constraint="0" expand="true"/>
+            <task id="5" name="Diagramma di Classe" color="#8cb6ce" meeting="false" start="2023-06-07" duration="1" complete="0" thirdDate="2023-05-31" thirdDate-constraint="0" expand="true">
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+                <depend id="29" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" name="Diagramma di Sequenza" color="#8cb6ce" meeting="false" start="2023-06-03" duration="1" complete="0" thirdDate="2023-06-03" thirdDate-constraint="0" expand="true">
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" name="Progetto Gantt" color="#8cb6ce" meeting="false" start="2023-06-03" duration="1" complete="0" thirdDate="2023-06-03" thirdDate-constraint="0" expand="true"/>
+            <task id="29" name="Database" color="#8cb6ce" meeting="false" start="2023-06-10" duration="1" complete="0" thirdDate="2023-05-27" thirdDate-constraint="0" expand="true">
+                <depend id="31" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" name="Canva" color="#8cb6ce" meeting="false" start="2023-06-24" duration="1" complete="0" thirdDate="2023-06-03" thirdDate-constraint="0" expand="true"/>
+            <task id="16" name="Applicazione" color="#000000" meeting="false" start="2023-06-14" duration="3" complete="0" thirdDate="2023-06-03" thirdDate-constraint="0" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+                <task id="30" name="Gestione Studente" color="#8cb6ce" meeting="false" start="2023-06-14" duration="1" complete="0" thirdDate="2023-06-14" thirdDate-constraint="0" expand="true">
+                    <depend id="31" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="12" name="Interfaccia Grafica" meeting="false" start="2023-05-31" duration="1" complete="0" expand="true"/>
-                <task id="15" name="Database" meeting="false" start="2023-05-29" duration="3" complete="0" expand="false">
-                    <task id="25" name="Classe Materie" meeting="false" start="2023-05-29" duration="1" complete="0" expand="true"/>
-                    <task id="24" name="Classe Classi" meeting="false" start="2023-05-29" duration="1" complete="0" expand="true"/>
-                    <task id="10" name="Creazione Classe Studente" meeting="false" start="2023-05-31" duration="1" complete="0" expand="true"/>
-                </task>
+                <task id="31" name="Integrazione Database" color="#8cb6ce" meeting="false" start="2023-06-17" duration="1" complete="0" thirdDate="2023-06-14" thirdDate-constraint="0" expand="true"/>
+                <task id="12" name="Interfaccia Grafica" color="#8cb6ce" meeting="false" start="2023-06-14" duration="3" complete="0" thirdDate="2023-06-14" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="20" name="Scrum" meeting="false" start="2023-05-31" duration="1" complete="0" expand="false">
-                <task id="3" name="Sprint review" meeting="false" start="2023-05-31" duration="1" complete="0" expand="true"/>
-                <task id="1" name="Sprint Planning" color="#8cb6ce" meeting="false" start="2023-05-31" duration="1" complete="0" thirdDate="2023-05-31" thirdDate-constraint="0" expand="true"/>
-                <task id="2" name="Daily Scrum Meeting" meeting="false" start="2023-05-31" duration="1" complete="0" expand="true"/>
-            </task>
+            <task id="23" name="Documentazione testuale" color="#8cb6ce" meeting="false" start="2023-06-24" duration="1" complete="0" thirdDate="2023-05-31" thirdDate-constraint="0" expand="true"/>
         </task>
     </tasks>
     <resources>
@@ -75,7 +75,21 @@
         <resource id="2" name="Daniele Onida" function="4" contacts="" phone=""/>
         <resource id="3" name="Fabrizio Lisci" function="2" contacts="" phone=""/>
     </resources>
-    <allocations/>
+    <allocations>
+        <allocation task-id="7" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="28" resource-id="1" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="1" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="27" resource-id="2" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="2" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="29" resource-id="2" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="31" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="30" resource-id="3" function="2" responsible="true" load="100.0"/>
+    </allocations>
     <vacations/>
     <previous/>
     <roles roleset-name="Default"/>
