@@ -1,0 +1,10 @@
+C:\Users\user7_12_1\Desktop\Programmazione\IngegneriaDelSoftware\Form Application\ScuoleGestione\ScuoleGestione\bin\Debug\ScuoleGestione.exe.config
+C:\Users\user7_12_1\Desktop\Programmazione\IngegneriaDelSoftware\Form Application\ScuoleGestione\ScuoleGestione\bin\Debug\ScuoleGestione.exe
+C:\Users\user7_12_1\Desktop\Programmazione\IngegneriaDelSoftware\Form Application\ScuoleGestione\ScuoleGestione\bin\Debug\ScuoleGestione.pdb
+C:\Users\user7_12_1\Desktop\Programmazione\IngegneriaDelSoftware\Form Application\ScuoleGestione\ScuoleGestione\obj\Debug\ScuoleGestione.csproj.AssemblyReference.cache
+C:\Users\user7_12_1\Desktop\Programmazione\IngegneriaDelSoftware\Form Application\ScuoleGestione\ScuoleGestione\obj\Debug\ScuoleGestione.csproj.SuggestedBindingRedirects.cache
+C:\Users\user7_12_1\Desktop\Programmazione\IngegneriaDelSoftware\Form Application\ScuoleGestione\ScuoleGestione\obj\Debug\ScuoleGestione.Properties.Resources.resources
+C:\Users\user7_12_1\Desktop\Programmazione\IngegneriaDelSoftware\Form Application\ScuoleGestione\ScuoleGestione\obj\Debug\ScuoleGestione.csproj.GenerateResource.cache
+C:\Users\user7_12_1\Desktop\Programmazione\IngegneriaDelSoftware\Form Application\ScuoleGestione\ScuoleGestione\obj\Debug\ScuoleGestione.csproj.CoreCompileInputs.cache
+C:\Users\user7_12_1\Desktop\Programmazione\IngegneriaDelSoftware\Form Application\ScuoleGestione\ScuoleGestione\obj\Debug\ScuoleGestione.exe
+C:\Users\user7_12_1\Desktop\Programmazione\IngegneriaDelSoftware\Form Application\ScuoleGestione\ScuoleGestione\obj\Debug\ScuoleGestione.pdb
