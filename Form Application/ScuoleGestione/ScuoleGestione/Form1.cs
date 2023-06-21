@@ -36,10 +36,20 @@ namespace ScuoleGestione
 
             var version = cmd.ExecuteScalar().ToString();
 
-            label2.Text = version;
+            labelTestConnessioneDB.Text = version;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnVisualizzaRegistro_Click(object sender, EventArgs e)
         {
             var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
             var con = new NpgsqlConnection(cs);
@@ -50,23 +60,25 @@ namespace ScuoleGestione
             NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
 
             NpgsqlDataReader reader = cmd.ExecuteReader();
-            
+
             DataTable table = new DataTable();
 
             table.Load(reader);
 
             dataGridView1.DataSource = table;
-
-            
-
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnInserimentoStudente_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        private void btnRicercaStudente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminazioneStudente_Click(object sender, EventArgs e)
         {
 
         }
