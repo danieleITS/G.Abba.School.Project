@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,59 @@ namespace ScuoleGestione
         public Form1()
         {
             InitializeComponent();
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+
+            DataSet ds = new DataSet();
+            dataGridView1.AutoGenerateColumns = true;
+            dataGridView1.DataSource = ds;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
+            var con = new NpgsqlConnection(cs);
+            con.Open();
+
+            var sql = "SELECT version()";
+
+            NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
+
+            var version = cmd.ExecuteScalar().ToString();
+
+            label2.Text = version;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
+            var con = new NpgsqlConnection(cs);
+            con.Open();
+
+            var sql = "SELECT * FROM studenti";
+
+            NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
+
+            NpgsqlDataReader reader = cmd.ExecuteReader();
+            
+            DataTable table = new DataTable();
+
+            table.Load(reader);
+
+            dataGridView1.DataSource = table;
+
+            
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
