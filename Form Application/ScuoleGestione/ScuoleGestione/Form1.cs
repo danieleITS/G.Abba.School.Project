@@ -55,7 +55,7 @@ namespace ScuoleGestione
             var con = new NpgsqlConnection(cs);
             con.Open();
 
-            var sql = "SELECT * FROM studenti";
+            var sql = "SELECT * FROM registro_voti_studenti";
 
             NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
 
@@ -66,21 +66,23 @@ namespace ScuoleGestione
             table.Load(reader);
 
             dataGridView1.DataSource = table;
+            labelTestConnessioneDB.Text = table.TableName;
         }
 
-        private void btnInserimentoStudente_Click(object sender, EventArgs e)
+        private void btnEliminazioneRiga_Click(object sender, EventArgs e)
         {
+            var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
+            var con = new NpgsqlConnection(cs);
+            con.Open();
 
-        }
+            var anno = dataGridView1.Rows[dataGridView1.SelectedCells[0].RowIndex].Cells["anno"].Value;
+            var sezione = dataGridView1.Rows[dataGridView1.SelectedCells[0].RowIndex].Cells["sezione"].Value;
 
-        private void btnRicercaStudente_Click(object sender, EventArgs e)
-        {
+            var sql = "DELETE FROM WHERE anno = " + anno + " AND sezione = '" + sezione + "'";
 
-        }
+            NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
 
-        private void btnEliminazioneStudente_Click(object sender, EventArgs e)
-        {
-
+            cmd.ExecuteNonQuery();
         }
     }
 }
