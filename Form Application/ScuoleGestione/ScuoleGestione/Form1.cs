@@ -51,22 +51,6 @@ namespace ScuoleGestione
 
         private void btnVisualizzaRegistro_Click(object sender, EventArgs e)
         {
-            var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
-            var con = new NpgsqlConnection(cs);
-            con.Open();
-
-            var sql = "SELECT * FROM registro_voti_studenti";
-
-            NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
-
-            NpgsqlDataReader reader = cmd.ExecuteReader();
-
-            DataTable table = new DataTable();
-
-            table.Load(reader);
-
-            dataGridView1.DataSource = table;
-            labelTestConnessioneDB.Text = table.TableName;
         }
 
         private void btnEliminazioneRiga_Click(object sender, EventArgs e)
@@ -83,6 +67,47 @@ namespace ScuoleGestione
             NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
 
             cmd.ExecuteNonQuery();
+        }
+
+        private void btnCerca_Click(object sender, EventArgs e)
+        {
+            var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
+            var con = new NpgsqlConnection(cs);
+            con.Open();
+
+            var sql = "SELECT * FROM studenti WHERE true ";
+
+
+            if (txtNome.Text != "")
+            {
+                sql += "AND nome LIKE '%" + txtNome.Text + "%'";
+            }
+
+            if (txtCognome.Text != "") 
+            {
+                sql += "AND cognome LIKE '%" + txtCognome.Text + "%'";
+            }
+
+            if (txtMatricola.Text != "") 
+            {
+                sql += "AND matricola = '" + txtMatricola.Text + "'";
+            }
+
+            if (cmbMateria.SelectedIndex != -1) 
+            {
+                sql += "AND materia = '" + cmbMateria.Text + "'";
+            }
+
+            NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
+
+            NpgsqlDataReader reader = cmd.ExecuteReader();
+
+            DataTable table = new DataTable();
+
+            table.Load(reader);
+
+            dataGridView1.DataSource = table;
+            labelTestConnessioneDB.Text = table.TableName;
         }
     }
 }
