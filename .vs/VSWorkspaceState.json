@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Form Application",
+    "\\Form Application\\ScuoleGestione",
+    "\\Form Application\\ScuoleGestione\\ScuoleGestione"
   ],
-  "SelectedNode": "\\ScuoleGestione.sln",
+  "SelectedNode": "\\Form Application\\ScuoleGestione\\ScuoleGestione.sln",
   "PreviewInSolutionExplorer": false
 }
