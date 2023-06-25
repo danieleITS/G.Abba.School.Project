@@ -16,12 +16,12 @@ namespace ScuoleGestione
         public Form1()
         {
             InitializeComponent();
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
+            dtgrdvw.AllowUserToAddRows = false;
+            dtgrdvw.AllowUserToDeleteRows = false;
 
             DataSet ds = new DataSet();
-            dataGridView1.AutoGenerateColumns = true;
-            dataGridView1.DataSource = ds;
+            dtgrdvw.AutoGenerateColumns = true;
+            dtgrdvw.DataSource = ds;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace ScuoleGestione
 
             table.Load(reader);
 
-            dataGridView1.DataSource = table;
+            dtgrdvw.DataSource = table;
             labelTestConnessioneDB.Text = table.TableName;
         }
 
@@ -75,8 +75,8 @@ namespace ScuoleGestione
             var con = new NpgsqlConnection(cs);
             con.Open();
 
-            var anno = dataGridView1.Rows[dataGridView1.SelectedCells[0].RowIndex].Cells["anno"].Value;
-            var sezione = dataGridView1.Rows[dataGridView1.SelectedCells[0].RowIndex].Cells["sezione"].Value;
+            var anno = dtgrdvw.Rows[dtgrdvw.SelectedCells[0].RowIndex].Cells["anno"].Value;
+            var sezione = dtgrdvw.Rows[dtgrdvw.SelectedCells[0].RowIndex].Cells["sezione"].Value;
 
             var sql = "DELETE FROM WHERE anno = " + anno + " AND sezione = '" + sezione + "'";
 
