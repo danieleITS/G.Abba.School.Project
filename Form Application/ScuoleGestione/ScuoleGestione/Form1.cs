@@ -51,11 +51,52 @@ namespace ScuoleGestione
 
         private void btnVisualizzaRegistro_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btnEliminazioneRiga_Click(object sender, EventArgs e)
+        {
             var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
             var con = new NpgsqlConnection(cs);
             con.Open();
 
-            var sql = "SELECT * FROM registro_voti_studenti";
+            var anno = dataGridView1.Rows[dataGridView1.SelectedCells[0].RowIndex].Cells["anno"].Value;
+            var sezione = dataGridView1.Rows[dataGridView1.SelectedCells[0].RowIndex].Cells["sezione"].Value;
+
+            var sql = "DELETE FROM WHERE anno = " + anno + " AND sezione = '" + sezione + "'";
+
+            NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
+
+            cmd.ExecuteNonQuery();
+        }
+
+        private void btnCerca_Click(object sender, EventArgs e)
+        {
+            var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
+            var con = new NpgsqlConnection(cs);
+            con.Open();
+
+            var sql = "SELECT * FROM studenti WHERE true ";
+
+
+            if (txtNome.Text != "")
+            {
+                sql += "AND nome LIKE '%" + txtNome.Text + "%'";
+            }
+
+            if (txtCognome.Text != "") 
+            {
+                sql += "AND cognome LIKE '%" + txtCognome.Text + "%'";
+            }
+
+            if (txtMatricola.Text != "") 
+            {
+                sql += "AND matricola = '" + txtMatricola.Text + "'";
+            }
+
+            if (cmbMateria.SelectedIndex != -1) 
+            {
+                sql += "AND materia = '" + cmbMateria.Text + "'";
+            }
 
             NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
 
@@ -65,24 +106,8 @@ namespace ScuoleGestione
 
             table.Load(reader);
 
-            dtgrdvw.DataSource = table;
+            dataGridView1.DataSource = table;
             labelTestConnessioneDB.Text = table.TableName;
-        }
-
-        private void btnEliminazioneRiga_Click(object sender, EventArgs e)
-        {
-            var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
-            var con = new NpgsqlConnection(cs);
-            con.Open();
-
-            var anno = dtgrdvw.Rows[dtgrdvw.SelectedCells[0].RowIndex].Cells["anno"].Value;
-            var sezione = dtgrdvw.Rows[dtgrdvw.SelectedCells[0].RowIndex].Cells["sezione"].Value;
-
-            var sql = "DELETE FROM WHERE anno = " + anno + " AND sezione = '" + sezione + "'";
-
-            NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
-
-            cmd.ExecuteNonQuery();
         }
     }
 }

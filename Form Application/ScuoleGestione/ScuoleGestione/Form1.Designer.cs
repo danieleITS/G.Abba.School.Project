@@ -36,7 +36,16 @@
             this.btnEliminazioneRiga = new System.Windows.Forms.Button();
             this.btnRicercaStudente = new System.Windows.Forms.Button();
             this.btnModificaRiga = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgrdvw)).BeginInit();
+            this.btnCerca = new System.Windows.Forms.Button();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblCognome = new System.Windows.Forms.Label();
+            this.lblMatricola = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtCognome = new System.Windows.Forms.TextBox();
+            this.txtMatricola = new System.Windows.Forms.TextBox();
+            this.cmbMateria = new System.Windows.Forms.ComboBox();
+            this.lblMateria = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNomeProgramma
@@ -107,6 +116,82 @@
             this.btnEliminazioneRiga.UseVisualStyleBackColor = true;
             this.btnEliminazioneRiga.Click += new System.EventHandler(this.btnEliminazioneRiga_Click);
             // 
+            // btnCerca
+            // 
+            this.btnCerca.Location = new System.Drawing.Point(413, 519);
+            this.btnCerca.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerca.Name = "btnCerca";
+            this.btnCerca.Size = new System.Drawing.Size(78, 24);
+            this.btnCerca.TabIndex = 7;
+            this.btnCerca.Text = "Cerca";
+            this.btnCerca.UseVisualStyleBackColor = true;
+            this.btnCerca.Click += new System.EventHandler(this.btnCerca_Click);
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(13, 74);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(35, 13);
+            this.lblNome.TabIndex = 8;
+            this.lblNome.Text = "Nome";
+            // 
+            // lblCognome
+            // 
+            this.lblCognome.AutoSize = true;
+            this.lblCognome.Location = new System.Drawing.Point(13, 97);
+            this.lblCognome.Name = "lblCognome";
+            this.lblCognome.Size = new System.Drawing.Size(52, 13);
+            this.lblCognome.TabIndex = 9;
+            this.lblCognome.Text = "Cognome";
+            // 
+            // lblMatricola
+            // 
+            this.lblMatricola.AutoSize = true;
+            this.lblMatricola.Location = new System.Drawing.Point(13, 120);
+            this.lblMatricola.Name = "lblMatricola";
+            this.lblMatricola.Size = new System.Drawing.Size(50, 13);
+            this.lblMatricola.TabIndex = 10;
+            this.lblMatricola.Text = "Matricola";
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(54, 71);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(100, 20);
+            this.txtNome.TabIndex = 11;
+            // 
+            // txtCognome
+            // 
+            this.txtCognome.Location = new System.Drawing.Point(72, 97);
+            this.txtCognome.Name = "txtCognome";
+            this.txtCognome.Size = new System.Drawing.Size(100, 20);
+            this.txtCognome.TabIndex = 12;
+            // 
+            // txtMatricola
+            // 
+            this.txtMatricola.Location = new System.Drawing.Point(72, 124);
+            this.txtMatricola.Name = "txtMatricola";
+            this.txtMatricola.Size = new System.Drawing.Size(100, 20);
+            this.txtMatricola.TabIndex = 13;
+            // 
+            // cmbMateria
+            // 
+            this.cmbMateria.FormattingEnabled = true;
+            this.cmbMateria.Location = new System.Drawing.Point(69, 164);
+            this.cmbMateria.Name = "cmbMateria";
+            this.cmbMateria.Size = new System.Drawing.Size(121, 21);
+            this.cmbMateria.TabIndex = 14;
+            // 
+            // lblMateria
+            // 
+            this.lblMateria.AutoSize = true;
+            this.lblMateria.Location = new System.Drawing.Point(21, 167);
+            this.lblMateria.Name = "lblMateria";
+            this.lblMateria.Size = new System.Drawing.Size(42, 13);
+            this.lblMateria.TabIndex = 15;
+            this.lblMateria.Text = "Materia";
+            //
             // btnRicercaStudente
             // 
             this.btnRicercaStudente.Location = new System.Drawing.Point(219, 640);
@@ -116,7 +201,7 @@
             this.btnRicercaStudente.TabIndex = 7;
             this.btnRicercaStudente.Text = "Ricerca Studente";
             this.btnRicercaStudente.UseVisualStyleBackColor = true;
-            // 
+            //
             // btnModificaRiga
             // 
             this.btnModificaRiga.Location = new System.Drawing.Point(825, 640);
@@ -131,7 +216,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1257, 682);
+            this.ClientSize = new System.Drawing.Size(943, 554);
+            this.Controls.Add(this.lblMateria);
+            this.Controls.Add(this.cmbMateria);
+            this.Controls.Add(this.txtMatricola);
+            this.Controls.Add(this.txtCognome);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.lblMatricola);
+            this.Controls.Add(this.lblCognome);
+            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.btnCerca);
             this.Controls.Add(this.btnModificaRiga);
             this.Controls.Add(this.btnRicercaStudente);
             this.Controls.Add(this.btnEliminazioneRiga);
@@ -157,6 +251,15 @@
         private System.Windows.Forms.DataGridView dtgrdvw;
         private System.Windows.Forms.Button btnInserisciRiga;
         private System.Windows.Forms.Button btnEliminazioneRiga;
+        private System.Windows.Forms.Button btnCerca;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblCognome;
+        private System.Windows.Forms.Label lblMatricola;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtCognome;
+        private System.Windows.Forms.TextBox txtMatricola;
+        private System.Windows.Forms.ComboBox cmbMateria;
+        private System.Windows.Forms.Label lblMateria;
         private System.Windows.Forms.Button btnRicercaStudente;
         private System.Windows.Forms.Button btnModificaRiga;
     }
