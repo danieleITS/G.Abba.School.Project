@@ -24,7 +24,7 @@ namespace ScuoleGestione
             dtgrdvw.DataSource = ds;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void lblTestConnessioneDB_Click(object sender, EventArgs e)
         {
             var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
             var con = new NpgsqlConnection(cs);
@@ -36,41 +36,41 @@ namespace ScuoleGestione
 
             var version = cmd.ExecuteScalar().ToString();
 
-            labelTestConnessioneDB.Text = version;
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
+            lblTestConnessioneDB.Text = version;
         }
 
         private void btnVisualizzaRegistro_Click(object sender, EventArgs e)
         {
+            // visualizzazione del registro completo con un click
         }
 
-        private void btnEliminazioneRiga_Click(object sender, EventArgs e)
+        private void btnVisualizzaClassi_Click(object sender, EventArgs e)
         {
-            var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
-            var con = new NpgsqlConnection(cs);
-            con.Open();
+            // visualizza le classi presenti nella scuola
+        }
 
-            var anno = dataGridView1.Rows[dataGridView1.SelectedCells[0].RowIndex].Cells["anno"].Value;
-            var sezione = dataGridView1.Rows[dataGridView1.SelectedCells[0].RowIndex].Cells["sezione"].Value;
+        private void btnVisualizzaMaterie_Click(object sender, EventArgs e)
+        {
+            // visualizza le materie presenti nella scuola
+        }
 
-            var sql = "DELETE FROM WHERE anno = " + anno + " AND sezione = '" + sezione + "'";
+        private void btnInserisci_Click(object sender, EventArgs e)
+        {
+            // inserimento nuova riga nella tabella visualizzata
+            // con dati studente (nome, cognome, matricola), classe (anno, sezione), voto (materia, voto);
+            // trasformare le label con qualcosa di sensato in base a cosa bisogna inserire
+        }
 
-            NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
-
-            cmd.ExecuteNonQuery();
+        private void btnRicerca_Click(object sender, EventArgs e)
+        {
+            // ricerca di elementi nella tabella visualizzata
+            // trasformare le label con qualcosa di sensato in base a cosa si può cercare
         }
 
         private void btnCerca_Click(object sender, EventArgs e)
         {
+            // bottone per la conferma della ricerca
+
             var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
             var con = new NpgsqlConnection(cs);
             con.Open();
@@ -83,19 +83,19 @@ namespace ScuoleGestione
                 sql += "AND nome LIKE '%" + txtNome.Text + "%'";
             }
 
-            if (txtCognome.Text != "") 
+            if (txtCognome.Text != "")
             {
                 sql += "AND cognome LIKE '%" + txtCognome.Text + "%'";
             }
 
-            if (txtMatricola.Text != "") 
+            if (txtMatricola.Text != "")
             {
                 sql += "AND matricola = '" + txtMatricola.Text + "'";
             }
 
-            if (cmbMateria.SelectedIndex != -1) 
+            if (cmbxMateria.SelectedIndex != -1)
             {
-                sql += "AND materia = '" + cmbMateria.Text + "'";
+                sql += "AND materia = '" + cmbxMateria.Text + "'";
             }
 
             NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
@@ -106,8 +106,33 @@ namespace ScuoleGestione
 
             table.Load(reader);
 
-            dataGridView1.DataSource = table;
-            labelTestConnessioneDB.Text = table.TableName;
+            dtgrdvw.DataSource = table;
+            lblTestConnessioneDB.Text = table.TableName;
+        }
+
+        private void btnModifica_Click(object sender, EventArgs e)
+        {
+            // modifica della riga selezionata nella tabella visualizzata
+            // trasformare le label con qualcosa di sensato in base a cosa si può modificare
+        }
+
+        private void btnElimina_Click(object sender, EventArgs e)
+        {
+            // eliminazzione della riga selezionata nella tabella visualizzata
+            // stampare un messaggio di conferma tramite message box
+
+            var cs = "Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB";
+            var con = new NpgsqlConnection(cs);
+            con.Open();
+
+            var anno = dtgrdvw.Rows[dtgrdvw.SelectedCells[0].RowIndex].Cells["anno"].Value;
+            var sezione = dtgrdvw.Rows[dtgrdvw.SelectedCells[0].RowIndex].Cells["sezione"].Value;
+
+            var sql = "DELETE FROM WHERE anno = " + anno + " AND sezione = '" + sezione + "'";
+
+            NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
+
+            cmd.ExecuteNonQuery();
         }
     }
 }
