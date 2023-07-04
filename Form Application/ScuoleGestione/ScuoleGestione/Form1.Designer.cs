@@ -37,19 +37,19 @@
             this.btnRicerca = new System.Windows.Forms.Button();
             this.btnModifica = new System.Windows.Forms.Button();
             this.btnCercaCercaStudente = new System.Windows.Forms.Button();
-            this.lblNomeCercaStudente = new System.Windows.Forms.Label();
-            this.lblCognomeCercaStudente = new System.Windows.Forms.Label();
-            this.txtNomeCercaStudente = new System.Windows.Forms.TextBox();
-            this.txtCognomeCercaStudente = new System.Windows.Forms.TextBox();
-            this.cmbMateriaAggiungiVoto = new System.Windows.Forms.ComboBox();
-            this.lblMateriaAggiungiVoto = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.txt2 = new System.Windows.Forms.TextBox();
+            this.txt3 = new System.Windows.Forms.TextBox();
+            this.cmb1 = new System.Windows.Forms.ComboBox();
+            this.lbl2 = new System.Windows.Forms.Label();
             this.btnVisualizzaClassi = new System.Windows.Forms.Button();
             this.btnVisualizzaMaterie = new System.Windows.Forms.Button();
-            this.lblCercaStudente = new System.Windows.Forms.Label();
-            this.lblMatricolaAggiungiVoto = new System.Windows.Forms.Label();
-            this.txtMatricolaAggiungiVoto = new System.Windows.Forms.TextBox();
-            this.cmbVotoAggiungiVoto = new System.Windows.Forms.ComboBox();
-            this.lblVotoAggiungiVoto = new System.Windows.Forms.Label();
+            this.lblTitolo = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.txt1 = new System.Windows.Forms.TextBox();
+            this.cmb2 = new System.Windows.Forms.ComboBox();
+            this.lbl3 = new System.Windows.Forms.Label();
             this.btnVisualizzaStudenti = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrdvw)).BeginInit();
             this.SuspendLayout();
@@ -150,60 +150,60 @@
             this.btnCercaCercaStudente.UseVisualStyleBackColor = true;
             this.btnCercaCercaStudente.Click += new System.EventHandler(this.btnCerca_Click);
             // 
-            // lblNomeCercaStudente
+            // lbl4
             // 
-            this.lblNomeCercaStudente.AutoSize = true;
-            this.lblNomeCercaStudente.Location = new System.Drawing.Point(82, 341);
-            this.lblNomeCercaStudente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNomeCercaStudente.Name = "lblNomeCercaStudente";
-            this.lblNomeCercaStudente.Size = new System.Drawing.Size(35, 13);
-            this.lblNomeCercaStudente.TabIndex = 8;
-            this.lblNomeCercaStudente.Text = "Nome";
+            this.lbl4.AutoSize = true;
+            this.lbl4.Location = new System.Drawing.Point(82, 341);
+            this.lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(35, 13);
+            this.lbl4.TabIndex = 8;
+            this.lbl4.Text = "Nome";
             // 
-            // lblCognomeCercaStudente
+            // lbl5
             // 
-            this.lblCognomeCercaStudente.AutoSize = true;
-            this.lblCognomeCercaStudente.Location = new System.Drawing.Point(84, 369);
-            this.lblCognomeCercaStudente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCognomeCercaStudente.Name = "lblCognomeCercaStudente";
-            this.lblCognomeCercaStudente.Size = new System.Drawing.Size(52, 13);
-            this.lblCognomeCercaStudente.TabIndex = 9;
-            this.lblCognomeCercaStudente.Text = "Cognome";
+            this.lbl5.AutoSize = true;
+            this.lbl5.Location = new System.Drawing.Point(84, 369);
+            this.lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(52, 13);
+            this.lbl5.TabIndex = 9;
+            this.lbl5.Text = "Cognome";
             // 
-            // txtNomeCercaStudente
+            // txt2
             // 
-            this.txtNomeCercaStudente.Location = new System.Drawing.Point(142, 341);
-            this.txtNomeCercaStudente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNomeCercaStudente.Name = "txtNomeCercaStudente";
-            this.txtNomeCercaStudente.Size = new System.Drawing.Size(76, 20);
-            this.txtNomeCercaStudente.TabIndex = 11;
+            this.txt2.Location = new System.Drawing.Point(142, 341);
+            this.txt2.Margin = new System.Windows.Forms.Padding(2);
+            this.txt2.Name = "txt2";
+            this.txt2.Size = new System.Drawing.Size(76, 20);
+            this.txt2.TabIndex = 11;
             // 
-            // txtCognomeCercaStudente
+            // txt3
             // 
-            this.txtCognomeCercaStudente.Location = new System.Drawing.Point(144, 369);
-            this.txtCognomeCercaStudente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCognomeCercaStudente.Name = "txtCognomeCercaStudente";
-            this.txtCognomeCercaStudente.Size = new System.Drawing.Size(76, 20);
-            this.txtCognomeCercaStudente.TabIndex = 12;
+            this.txt3.Location = new System.Drawing.Point(144, 369);
+            this.txt3.Margin = new System.Windows.Forms.Padding(2);
+            this.txt3.Name = "txt3";
+            this.txt3.Size = new System.Drawing.Size(76, 20);
+            this.txt3.TabIndex = 12;
             // 
-            // cmbMateriaAggiungiVoto
+            // cmb1
             // 
-            this.cmbMateriaAggiungiVoto.FormattingEnabled = true;
-            this.cmbMateriaAggiungiVoto.Location = new System.Drawing.Point(144, 280);
-            this.cmbMateriaAggiungiVoto.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbMateriaAggiungiVoto.Name = "cmbMateriaAggiungiVoto";
-            this.cmbMateriaAggiungiVoto.Size = new System.Drawing.Size(92, 21);
-            this.cmbMateriaAggiungiVoto.TabIndex = 14;
+            this.cmb1.FormattingEnabled = true;
+            this.cmb1.Location = new System.Drawing.Point(144, 280);
+            this.cmb1.Margin = new System.Windows.Forms.Padding(2);
+            this.cmb1.Name = "cmb1";
+            this.cmb1.Size = new System.Drawing.Size(92, 21);
+            this.cmb1.TabIndex = 14;
             // 
-            // lblMateriaAggiungiVoto
+            // lbl2
             // 
-            this.lblMateriaAggiungiVoto.AutoSize = true;
-            this.lblMateriaAggiungiVoto.Location = new System.Drawing.Point(84, 280);
-            this.lblMateriaAggiungiVoto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblMateriaAggiungiVoto.Name = "lblMateriaAggiungiVoto";
-            this.lblMateriaAggiungiVoto.Size = new System.Drawing.Size(42, 13);
-            this.lblMateriaAggiungiVoto.TabIndex = 15;
-            this.lblMateriaAggiungiVoto.Text = "Materia";
+            this.lbl2.AutoSize = true;
+            this.lbl2.Location = new System.Drawing.Point(84, 280);
+            this.lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(42, 13);
+            this.lbl2.TabIndex = 15;
+            this.lbl2.Text = "Materia";
             // 
             // btnVisualizzaClassi
             // 
@@ -225,36 +225,35 @@
             this.btnVisualizzaMaterie.UseVisualStyleBackColor = true;
             this.btnVisualizzaMaterie.Click += new System.EventHandler(this.btnVisualizzaMaterie_Click);
             // 
-            // lblCercaStudente
+            // lblTitolo
             // 
-            this.lblCercaStudente.AutoSize = true;
-            this.lblCercaStudente.Location = new System.Drawing.Point(127, 239);
-            this.lblCercaStudente.Name = "lblCercaStudente";
-            this.lblCercaStudente.Size = new System.Drawing.Size(79, 13);
-            this.lblCercaStudente.TabIndex = 18;
-            this.lblCercaStudente.Text = "Cerca studente";
-            this.lblCercaStudente.Click += new System.EventHandler(this.lblCercaStudente_Click);
+            this.lblTitolo.AutoSize = true;
+            this.lblTitolo.Location = new System.Drawing.Point(127, 239);
+            this.lblTitolo.Name = "lblTitolo";
+            this.lblTitolo.Size = new System.Drawing.Size(79, 13);
+            this.lblTitolo.TabIndex = 18;
+            this.lblTitolo.Text = "Cerca studente";
             // 
-            // lblMatricolaAggiungiVoto
+            // lbl1
             // 
-            this.lblMatricolaAggiungiVoto.AutoSize = true;
-            this.lblMatricolaAggiungiVoto.Location = new System.Drawing.Point(88, 258);
-            this.lblMatricolaAggiungiVoto.Name = "lblMatricolaAggiungiVoto";
-            this.lblMatricolaAggiungiVoto.Size = new System.Drawing.Size(50, 13);
-            this.lblMatricolaAggiungiVoto.TabIndex = 20;
-            this.lblMatricolaAggiungiVoto.Text = "Matricola";
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(88, 258);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(50, 13);
+            this.lbl1.TabIndex = 20;
+            this.lbl1.Text = "Matricola";
             // 
-            // txtMatricolaAggiungiVoto
+            // txt1
             // 
-            this.txtMatricolaAggiungiVoto.Location = new System.Drawing.Point(144, 255);
-            this.txtMatricolaAggiungiVoto.Name = "txtMatricolaAggiungiVoto";
-            this.txtMatricolaAggiungiVoto.Size = new System.Drawing.Size(100, 20);
-            this.txtMatricolaAggiungiVoto.TabIndex = 21;
+            this.txt1.Location = new System.Drawing.Point(144, 255);
+            this.txt1.Name = "txt1";
+            this.txt1.Size = new System.Drawing.Size(100, 20);
+            this.txt1.TabIndex = 21;
             // 
-            // cmbVotoAggiungiVoto
+            // cmb2
             // 
-            this.cmbVotoAggiungiVoto.FormattingEnabled = true;
-            this.cmbVotoAggiungiVoto.Items.AddRange(new object[] {
+            this.cmb2.FormattingEnabled = true;
+            this.cmb2.Items.AddRange(new object[] {
             "10",
             "10-",
             "9½",
@@ -292,19 +291,19 @@
             "1½",
             "1+",
             "1"});
-            this.cmbVotoAggiungiVoto.Location = new System.Drawing.Point(123, 306);
-            this.cmbVotoAggiungiVoto.Name = "cmbVotoAggiungiVoto";
-            this.cmbVotoAggiungiVoto.Size = new System.Drawing.Size(121, 21);
-            this.cmbVotoAggiungiVoto.TabIndex = 22;
+            this.cmb2.Location = new System.Drawing.Point(123, 306);
+            this.cmb2.Name = "cmb2";
+            this.cmb2.Size = new System.Drawing.Size(121, 21);
+            this.cmb2.TabIndex = 22;
             // 
-            // lblVotoAggiungiVoto
+            // lbl3
             // 
-            this.lblVotoAggiungiVoto.AutoSize = true;
-            this.lblVotoAggiungiVoto.Location = new System.Drawing.Point(78, 309);
-            this.lblVotoAggiungiVoto.Name = "lblVotoAggiungiVoto";
-            this.lblVotoAggiungiVoto.Size = new System.Drawing.Size(29, 13);
-            this.lblVotoAggiungiVoto.TabIndex = 23;
-            this.lblVotoAggiungiVoto.Text = "Voto";
+            this.lbl3.AutoSize = true;
+            this.lbl3.Location = new System.Drawing.Point(78, 309);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(29, 13);
+            this.lbl3.TabIndex = 23;
+            this.lbl3.Text = "Voto";
             // 
             // btnVisualizzaStudenti
             // 
@@ -321,19 +320,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 561);
             this.Controls.Add(this.btnVisualizzaStudenti);
-            this.Controls.Add(this.lblVotoAggiungiVoto);
-            this.Controls.Add(this.cmbVotoAggiungiVoto);
-            this.Controls.Add(this.txtMatricolaAggiungiVoto);
-            this.Controls.Add(this.lblMatricolaAggiungiVoto);
-            this.Controls.Add(this.lblCercaStudente);
+            this.Controls.Add(this.lbl3);
+            this.Controls.Add(this.cmb2);
+            this.Controls.Add(this.txt1);
+            this.Controls.Add(this.lbl1);
+            this.Controls.Add(this.lblTitolo);
             this.Controls.Add(this.btnVisualizzaMaterie);
             this.Controls.Add(this.btnVisualizzaClassi);
-            this.Controls.Add(this.lblMateriaAggiungiVoto);
-            this.Controls.Add(this.cmbMateriaAggiungiVoto);
-            this.Controls.Add(this.txtCognomeCercaStudente);
-            this.Controls.Add(this.txtNomeCercaStudente);
-            this.Controls.Add(this.lblCognomeCercaStudente);
-            this.Controls.Add(this.lblNomeCercaStudente);
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.cmb1);
+            this.Controls.Add(this.txt3);
+            this.Controls.Add(this.txt2);
+            this.Controls.Add(this.lbl5);
+            this.Controls.Add(this.lbl4);
             this.Controls.Add(this.btnCercaCercaStudente);
             this.Controls.Add(this.btnModifica);
             this.Controls.Add(this.btnRicerca);
@@ -362,21 +361,21 @@
         private System.Windows.Forms.Button btnInserisci;
         private System.Windows.Forms.Button btnElimina;
         private System.Windows.Forms.Button btnCercaCercaStudente;
-        private System.Windows.Forms.Label lblNomeCercaStudente;
-        private System.Windows.Forms.Label lblCognomeCercaStudente;
-        private System.Windows.Forms.TextBox txtNomeCercaStudente;
-        private System.Windows.Forms.TextBox txtCognomeCercaStudente;
-        private System.Windows.Forms.ComboBox cmbMateriaAggiungiVoto;
-        private System.Windows.Forms.Label lblMateriaAggiungiVoto;
+        private System.Windows.Forms.Label lbl4;
+        private System.Windows.Forms.Label lbl5;
+        private System.Windows.Forms.TextBox txt2;
+        private System.Windows.Forms.TextBox txt3;
+        private System.Windows.Forms.ComboBox cmb1;
+        private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Button btnRicerca;
         private System.Windows.Forms.Button btnModifica;
         private System.Windows.Forms.Button btnVisualizzaClassi;
         private System.Windows.Forms.Button btnVisualizzaMaterie;
-        private System.Windows.Forms.Label lblCercaStudente;
-        private System.Windows.Forms.Label lblMatricolaAggiungiVoto;
-        private System.Windows.Forms.TextBox txtMatricolaAggiungiVoto;
-        private System.Windows.Forms.ComboBox cmbVotoAggiungiVoto;
-        private System.Windows.Forms.Label lblVotoAggiungiVoto;
+        private System.Windows.Forms.Label lblTitolo;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.TextBox txt1;
+        private System.Windows.Forms.ComboBox cmb2;
+        private System.Windows.Forms.Label lbl3;
         private System.Windows.Forms.Button btnVisualizzaStudenti;
     }
 }

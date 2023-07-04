@@ -57,29 +57,17 @@ namespace ScuoleGestione
 
         private void HideElement()
         {
-            lblNomeCercaStudente.Visible = false;
-            lblCognomeCercaStudente.Visible = false;
-            lblMatricolaCercaStudente.Visible = false;
-            txtNomeCercaStudente.Visible = false;
-            txtCognomeCercaStudente.Visible = false;
-            txtMatricolaCercaStudente.Visible = false;
+            lbl4.Visible = false;
+            lbl5.Visible = false;
+            txt2.Visible = false;
+            txt3.Visible = false;
             btnCercaCercaStudente.Visible = false;
-            lblMatricolaAggiungiVoto.Visible = false;
-            lblVotoAggiungiVoto.Visible = false;
-            lblMateriaAggiungiVoto.Visible = false;
-            txtMatricolaAggiungiVoto.Visible = false;
-            cmbVotoAggiungiVoto.Visible = false;
-            cmbMateriaAggiungiVoto.Visible = false;
-            btnAggiungiAggiungiVoto.Visible = false;
-            lblNomeInserisciStudente.Visible = false;
-            lblCognomeInserisciStudente.Visible = false;
-            lblClasseInserisciStudente.Visible = false;
-            lblMatricolaInserisciStudente.Visible = false;
-            txtNomeInserisciStudente.Visible = false;
-            txtCognomeInserisciStudente.Visible = false;
-            cmbClasseInserisciStudente.Visible = false;
-            txtMatricolaInserisciStudente.Visible = false;
-            btnInserisciInserisciStudente.Visible = false;
+            lbl1.Visible = false;
+            lbl3.Visible = false;
+            lbl2.Visible = false;
+            txt1.Visible = false;
+            cmb2.Visible = false;
+            cmb1.Visible = false;
         }
 
         private void lblTestConnessioneDB_Click(object sender, EventArgs e)
@@ -126,24 +114,24 @@ namespace ScuoleGestione
             var sql = "SELECT * FROM studenti WHERE true ";
 
 
-            if (txtNomeCercaStudente.Text != "")
+            if (txt2.Text != "")
             {
-                sql += "AND nome LIKE '%" + txtNomeCercaStudente.Text + "%'";
+                sql += "AND nome LIKE '%" + txt2.Text + "%'";
             }
 
-            if (txtCognomeCercaStudente.Text != "")
+            if (txt3.Text != "")
             {
-                sql += "AND cognome LIKE '%" + txtCognomeCercaStudente.Text + "%'";
+                sql += "AND cognome LIKE '%" + txt3.Text + "%'";
             }
 
-            if (txtMatricolaCercaStudente.Text != "")
+            if (txt1.Text != "")
             {
-                sql += "AND matricola = '" + txtMatricolaCercaStudente.Text + "'";
+                sql += "AND matricola = '" + txt1.Text + "'";
             }
 
-            if (cmbMateriaAggiungiVoto.SelectedIndex != -1)
+            if (cmb1.SelectedIndex != -1)
             {
-                sql += "AND materia = '" + cmbMateriaAggiungiVoto.Text + "'";
+                sql += "AND materia = '" + cmb1.Text + "'";
             }
 
             NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
@@ -174,14 +162,14 @@ namespace ScuoleGestione
 
         private void btnAggiungiVoto_Click(object sender, EventArgs e)
         {
-            if (txtMatricolaAggiungiVoto.Text != "" && cmbVotoAggiungiVoto.SelectedIndex != -1 && cmbMateriaAggiungiVoto.SelectedIndex != -1)
+            if (txt1.Text != "" && cmb2.SelectedIndex != -1 && cmb1.SelectedIndex != -1)
             {
                 //scrivere la query di insert qui uwu
                 NpgsqlConnection con = new NpgsqlConnection("Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB");
 
                 con.Open();
 
-                var query = "INSERT INTO public.voti(matricola, materia, voto) VALUES ('" + txtMatricolaAggiungiVoto.Text + "', '" + cmbMateriaAggiungiVoto.SelectedItem + "', '" + cmbVotoAggiungiVoto.SelectedItem + "');";
+                var query = "INSERT INTO public.voti(matricola, materia, voto) VALUES ('" + txt1.Text + "', '" + cmb1.SelectedItem + "', '" + cmb2.SelectedItem + "');";
                 Console.WriteLine(query);
 
                 NpgsqlCommand command = new NpgsqlCommand(query, con);
@@ -199,14 +187,14 @@ namespace ScuoleGestione
 
         private void btnInserisciStudente_Click(object sender, EventArgs e)
         {
-            if (txtNomeInserisciStudente.Text != "" && txtCognomeInserisciStudente.Text != "" && txtMatricolaInserisciStudente.Text != "" && cmbClasseInserisciStudente.SelectedIndex != -1)
+            if (txt2.Text != "" && txt3.Text != "" && txt1.Text != "" && cmb2.SelectedIndex != -1)
             {
                 //scrivere la query di insert qui uwu
                 NpgsqlConnection con = new NpgsqlConnection("Host=192.168.11.17; Username=postgres; Password=1234abcd; Database=gabba_DB");
 
                 con.Open();
 
-                var query = "INSERT INTO public.studenti(matricola, nome, cognome, anno_classe, sezione_classe) VALUES ('" + txtMatricolaInserisciStudente.Text + "', '" + txtNomeInserisciStudente.Text + "', '" + txtCognomeInserisciStudente.Text + "', " + cmbClasseInserisciStudente.SelectedItem.ToString().ToCharArray()[0] + ", '" + cmbClasseInserisciStudente.SelectedItem.ToString().ToCharArray()[1] + "')";
+                var query = "INSERT INTO public.studenti(matricola, nome, cognome, anno_classe, sezione_classe) VALUES ('" + txt1.Text + "', '" + txt2.Text + "', '" + txt3.Text + "', " + cmb1.SelectedItem.ToString().ToCharArray()[0] + ", '" + cmb1.SelectedItem.ToString().ToCharArray()[1] + "')";
                 Console.WriteLine(query);
 
                 NpgsqlCommand command = new NpgsqlCommand(query, con);
@@ -215,44 +203,6 @@ namespace ScuoleGestione
 
                 con.Close();
             }
-        }
-
-        private void lblCercaStudente_Click(object sender, EventArgs e)
-        {
-            HideElement();
-            lblNomeCercaStudente.Visible = true;
-            lblCognomeCercaStudente.Visible = true;
-            lblMatricolaCercaStudente.Visible = true;
-            txtNomeCercaStudente.Visible = true;
-            txtCognomeCercaStudente.Visible = true;
-            txtMatricolaCercaStudente.Visible = true;
-            btnCercaCercaStudente.Visible = true;
-        }
-
-        private void lblAggiungiVoto_Click(object sender, EventArgs e)
-        {
-            HideElement();
-            lblMatricolaAggiungiVoto.Visible = true;
-            lblVotoAggiungiVoto.Visible = true;
-            lblMateriaAggiungiVoto.Visible = true;
-            txtMatricolaAggiungiVoto.Visible = true;
-            cmbVotoAggiungiVoto.Visible = true;
-            cmbMateriaAggiungiVoto.Visible = true;
-            btnAggiungiAggiungiVoto.Visible = true;
-        }
-
-        private void lblInserisciStudente_Click(object sender, EventArgs e)
-        {
-            HideElement();
-            lblNomeInserisciStudente.Visible = true;
-            lblCognomeInserisciStudente.Visible = true;
-            lblClasseInserisciStudente.Visible = true;
-            lblMatricolaInserisciStudente.Visible = true;
-            txtNomeInserisciStudente.Visible = true;
-            txtCognomeInserisciStudente.Visible = true;
-            cmbClasseInserisciStudente.Visible = true;
-            txtMatricolaInserisciStudente.Visible = true;
-            btnInserisciInserisciStudente.Visible = true;
         }
 
     }
