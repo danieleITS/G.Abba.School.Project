@@ -64,6 +64,7 @@
             this.cmbClasseInserisciStudente = new System.Windows.Forms.ComboBox();
             this.txtMatricolaInserisciStudente = new System.Windows.Forms.TextBox();
             this.btnInserisciInserisciStudente = new System.Windows.Forms.Button();
+            this.btnVisualizzaStudenti = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrdvw)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,10 +72,10 @@
             // 
             this.lblNomeProgramma.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblNomeProgramma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeProgramma.Location = new System.Drawing.Point(15, 16);
+            this.lblNomeProgramma.Location = new System.Drawing.Point(20, 20);
             this.lblNomeProgramma.Name = "lblNomeProgramma";
             this.lblNomeProgramma.Padding = new System.Windows.Forms.Padding(20, 5, 20, 5);
-            this.lblNomeProgramma.Size = new System.Drawing.Size(248, 32);
+            this.lblNomeProgramma.Size = new System.Drawing.Size(330, 40);
             this.lblNomeProgramma.TabIndex = 0;
             this.lblNomeProgramma.Text = "Gestione Registro Studenti";
             this.lblNomeProgramma.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -82,7 +83,7 @@
             // lblTestConnessioneDB
             // 
             this.lblTestConnessioneDB.AutoSize = true;
-            this.lblTestConnessioneDB.Location = new System.Drawing.Point(16, 58);
+            this.lblTestConnessioneDB.Location = new System.Drawing.Point(0, 7);
             this.lblTestConnessioneDB.Name = "lblTestConnessioneDB";
             this.lblTestConnessioneDB.Size = new System.Drawing.Size(141, 13);
             this.lblTestConnessioneDB.TabIndex = 2;
@@ -91,9 +92,9 @@
             // 
             // btnVisualizzaRegistro
             // 
-            this.btnVisualizzaRegistro.Location = new System.Drawing.Point(12, 555);
+            this.btnVisualizzaRegistro.Location = new System.Drawing.Point(189, 69);
             this.btnVisualizzaRegistro.Name = "btnVisualizzaRegistro";
-            this.btnVisualizzaRegistro.Size = new System.Drawing.Size(150, 24);
+            this.btnVisualizzaRegistro.Size = new System.Drawing.Size(150, 30);
             this.btnVisualizzaRegistro.TabIndex = 3;
             this.btnVisualizzaRegistro.Text = "Visualizza Registro Voti";
             this.btnVisualizzaRegistro.UseVisualStyleBackColor = true;
@@ -102,18 +103,18 @@
             // dtgrdvw
             // 
             this.dtgrdvw.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgrdvw.Location = new System.Drawing.Point(599, 16);
+            this.dtgrdvw.Location = new System.Drawing.Point(385, 20);
             this.dtgrdvw.Name = "dtgrdvw";
             this.dtgrdvw.RowHeadersWidth = 50;
-            this.dtgrdvw.Size = new System.Drawing.Size(538, 531);
+            this.dtgrdvw.Size = new System.Drawing.Size(600, 480);
             this.dtgrdvw.TabIndex = 4;
             // 
             // btnInserisci
             // 
-            this.btnInserisci.Location = new System.Drawing.Point(52, 460);
+            this.btnInserisci.Location = new System.Drawing.Point(385, 512);
             this.btnInserisci.Margin = new System.Windows.Forms.Padding(2);
             this.btnInserisci.Name = "btnInserisci";
-            this.btnInserisci.Size = new System.Drawing.Size(105, 24);
+            this.btnInserisci.Size = new System.Drawing.Size(140, 30);
             this.btnInserisci.TabIndex = 5;
             this.btnInserisci.Text = "Inserisci";
             this.btnInserisci.UseVisualStyleBackColor = true;
@@ -121,10 +122,10 @@
             // 
             // btnElimina
             // 
-            this.btnElimina.Location = new System.Drawing.Point(1032, 557);
+            this.btnElimina.Location = new System.Drawing.Point(845, 512);
             this.btnElimina.Margin = new System.Windows.Forms.Padding(2);
             this.btnElimina.Name = "btnElimina";
-            this.btnElimina.Size = new System.Drawing.Size(105, 24);
+            this.btnElimina.Size = new System.Drawing.Size(140, 30);
             this.btnElimina.TabIndex = 6;
             this.btnElimina.Text = "Elimina";
             this.btnElimina.UseVisualStyleBackColor = true;
@@ -132,10 +133,10 @@
             // 
             // btnRicerca
             // 
-            this.btnRicerca.Location = new System.Drawing.Point(167, 460);
+            this.btnRicerca.Location = new System.Drawing.Point(538, 512);
             this.btnRicerca.Margin = new System.Windows.Forms.Padding(2);
             this.btnRicerca.Name = "btnRicerca";
-            this.btnRicerca.Size = new System.Drawing.Size(105, 24);
+            this.btnRicerca.Size = new System.Drawing.Size(140, 30);
             this.btnRicerca.TabIndex = 7;
             this.btnRicerca.Text = "Ricerca";
             this.btnRicerca.UseVisualStyleBackColor = true;
@@ -143,10 +144,10 @@
             // 
             // btnModifica
             // 
-            this.btnModifica.Location = new System.Drawing.Point(282, 460);
+            this.btnModifica.Location = new System.Drawing.Point(692, 512);
             this.btnModifica.Margin = new System.Windows.Forms.Padding(2);
             this.btnModifica.Name = "btnModifica";
-            this.btnModifica.Size = new System.Drawing.Size(105, 24);
+            this.btnModifica.Size = new System.Drawing.Size(140, 30);
             this.btnModifica.TabIndex = 8;
             this.btnModifica.Text = "Modifica";
             this.btnModifica.UseVisualStyleBackColor = true;
@@ -154,7 +155,7 @@
             // 
             // btnCercaCercaStudente
             // 
-            this.btnCercaCercaStudente.Location = new System.Drawing.Point(68, 201);
+            this.btnCercaCercaStudente.Location = new System.Drawing.Point(642, 205);
             this.btnCercaCercaStudente.Margin = new System.Windows.Forms.Padding(2);
             this.btnCercaCercaStudente.Name = "btnCercaCercaStudente";
             this.btnCercaCercaStudente.Size = new System.Drawing.Size(56, 20);
@@ -166,7 +167,7 @@
             // lblNomeCercaStudente
             // 
             this.lblNomeCercaStudente.AutoSize = true;
-            this.lblNomeCercaStudente.Location = new System.Drawing.Point(31, 121);
+            this.lblNomeCercaStudente.Location = new System.Drawing.Point(605, 125);
             this.lblNomeCercaStudente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNomeCercaStudente.Name = "lblNomeCercaStudente";
             this.lblNomeCercaStudente.Size = new System.Drawing.Size(35, 13);
@@ -176,7 +177,7 @@
             // lblCognomeCercaStudente
             // 
             this.lblCognomeCercaStudente.AutoSize = true;
-            this.lblCognomeCercaStudente.Location = new System.Drawing.Point(31, 143);
+            this.lblCognomeCercaStudente.Location = new System.Drawing.Point(605, 147);
             this.lblCognomeCercaStudente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCognomeCercaStudente.Name = "lblCognomeCercaStudente";
             this.lblCognomeCercaStudente.Size = new System.Drawing.Size(52, 13);
@@ -186,7 +187,7 @@
             // lblMatricolaCercaStudente
             // 
             this.lblMatricolaCercaStudente.AutoSize = true;
-            this.lblMatricolaCercaStudente.Location = new System.Drawing.Point(31, 166);
+            this.lblMatricolaCercaStudente.Location = new System.Drawing.Point(605, 170);
             this.lblMatricolaCercaStudente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMatricolaCercaStudente.Name = "lblMatricolaCercaStudente";
             this.lblMatricolaCercaStudente.Size = new System.Drawing.Size(50, 13);
@@ -195,7 +196,7 @@
             // 
             // txtNomeCercaStudente
             // 
-            this.txtNomeCercaStudente.Location = new System.Drawing.Point(91, 121);
+            this.txtNomeCercaStudente.Location = new System.Drawing.Point(665, 125);
             this.txtNomeCercaStudente.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomeCercaStudente.Name = "txtNomeCercaStudente";
             this.txtNomeCercaStudente.Size = new System.Drawing.Size(76, 20);
@@ -203,7 +204,7 @@
             // 
             // txtCognomeCercaStudente
             // 
-            this.txtCognomeCercaStudente.Location = new System.Drawing.Point(91, 143);
+            this.txtCognomeCercaStudente.Location = new System.Drawing.Point(665, 147);
             this.txtCognomeCercaStudente.Margin = new System.Windows.Forms.Padding(2);
             this.txtCognomeCercaStudente.Name = "txtCognomeCercaStudente";
             this.txtCognomeCercaStudente.Size = new System.Drawing.Size(76, 20);
@@ -211,7 +212,7 @@
             // 
             // txtMatricolaCercaStudente
             // 
-            this.txtMatricolaCercaStudente.Location = new System.Drawing.Point(91, 166);
+            this.txtMatricolaCercaStudente.Location = new System.Drawing.Point(665, 170);
             this.txtMatricolaCercaStudente.Margin = new System.Windows.Forms.Padding(2);
             this.txtMatricolaCercaStudente.Name = "txtMatricolaCercaStudente";
             this.txtMatricolaCercaStudente.Size = new System.Drawing.Size(76, 20);
@@ -220,7 +221,7 @@
             // cmbMateriaAggiungiVoto
             // 
             this.cmbMateriaAggiungiVoto.FormattingEnabled = true;
-            this.cmbMateriaAggiungiVoto.Location = new System.Drawing.Point(353, 169);
+            this.cmbMateriaAggiungiVoto.Location = new System.Drawing.Point(814, 174);
             this.cmbMateriaAggiungiVoto.Margin = new System.Windows.Forms.Padding(2);
             this.cmbMateriaAggiungiVoto.Name = "cmbMateriaAggiungiVoto";
             this.cmbMateriaAggiungiVoto.Size = new System.Drawing.Size(92, 21);
@@ -229,7 +230,7 @@
             // lblMateriaAggiungiVoto
             // 
             this.lblMateriaAggiungiVoto.AutoSize = true;
-            this.lblMateriaAggiungiVoto.Location = new System.Drawing.Point(293, 169);
+            this.lblMateriaAggiungiVoto.Location = new System.Drawing.Point(754, 174);
             this.lblMateriaAggiungiVoto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMateriaAggiungiVoto.Name = "lblMateriaAggiungiVoto";
             this.lblMateriaAggiungiVoto.Size = new System.Drawing.Size(42, 13);
@@ -238,9 +239,9 @@
             // 
             // btnVisualizzaClassi
             // 
-            this.btnVisualizzaClassi.Location = new System.Drawing.Point(12, 523);
+            this.btnVisualizzaClassi.Location = new System.Drawing.Point(33, 105);
             this.btnVisualizzaClassi.Name = "btnVisualizzaClassi";
-            this.btnVisualizzaClassi.Size = new System.Drawing.Size(150, 24);
+            this.btnVisualizzaClassi.Size = new System.Drawing.Size(150, 30);
             this.btnVisualizzaClassi.TabIndex = 16;
             this.btnVisualizzaClassi.Text = "Visualizza Classi";
             this.btnVisualizzaClassi.UseVisualStyleBackColor = true;
@@ -248,9 +249,9 @@
             // 
             // btnVisualizzaMaterie
             // 
-            this.btnVisualizzaMaterie.Location = new System.Drawing.Point(12, 490);
+            this.btnVisualizzaMaterie.Location = new System.Drawing.Point(189, 105);
             this.btnVisualizzaMaterie.Name = "btnVisualizzaMaterie";
-            this.btnVisualizzaMaterie.Size = new System.Drawing.Size(150, 24);
+            this.btnVisualizzaMaterie.Size = new System.Drawing.Size(150, 30);
             this.btnVisualizzaMaterie.TabIndex = 17;
             this.btnVisualizzaMaterie.Text = "Visualizza Materie";
             this.btnVisualizzaMaterie.UseVisualStyleBackColor = true;
@@ -259,7 +260,7 @@
             // lblCercaStudente
             // 
             this.lblCercaStudente.AutoSize = true;
-            this.lblCercaStudente.Location = new System.Drawing.Point(65, 93);
+            this.lblCercaStudente.Location = new System.Drawing.Point(639, 97);
             this.lblCercaStudente.Name = "lblCercaStudente";
             this.lblCercaStudente.Size = new System.Drawing.Size(79, 13);
             this.lblCercaStudente.TabIndex = 18;
@@ -269,7 +270,7 @@
             // lblAggiungiVoto
             // 
             this.lblAggiungiVoto.AutoSize = true;
-            this.lblAggiungiVoto.Location = new System.Drawing.Point(350, 93);
+            this.lblAggiungiVoto.Location = new System.Drawing.Point(811, 98);
             this.lblAggiungiVoto.Name = "lblAggiungiVoto";
             this.lblAggiungiVoto.Size = new System.Drawing.Size(72, 13);
             this.lblAggiungiVoto.TabIndex = 19;
@@ -279,7 +280,7 @@
             // lblMatricolaAggiungiVoto
             // 
             this.lblMatricolaAggiungiVoto.AutoSize = true;
-            this.lblMatricolaAggiungiVoto.Location = new System.Drawing.Point(297, 120);
+            this.lblMatricolaAggiungiVoto.Location = new System.Drawing.Point(758, 125);
             this.lblMatricolaAggiungiVoto.Name = "lblMatricolaAggiungiVoto";
             this.lblMatricolaAggiungiVoto.Size = new System.Drawing.Size(50, 13);
             this.lblMatricolaAggiungiVoto.TabIndex = 20;
@@ -287,7 +288,7 @@
             // 
             // txtMatricolaAggiungiVoto
             // 
-            this.txtMatricolaAggiungiVoto.Location = new System.Drawing.Point(353, 117);
+            this.txtMatricolaAggiungiVoto.Location = new System.Drawing.Point(814, 122);
             this.txtMatricolaAggiungiVoto.Name = "txtMatricolaAggiungiVoto";
             this.txtMatricolaAggiungiVoto.Size = new System.Drawing.Size(100, 20);
             this.txtMatricolaAggiungiVoto.TabIndex = 21;
@@ -333,7 +334,7 @@
             "1½",
             "1+",
             "1"});
-            this.cmbVotoAggiungiVoto.Location = new System.Drawing.Point(353, 143);
+            this.cmbVotoAggiungiVoto.Location = new System.Drawing.Point(814, 148);
             this.cmbVotoAggiungiVoto.Name = "cmbVotoAggiungiVoto";
             this.cmbVotoAggiungiVoto.Size = new System.Drawing.Size(121, 21);
             this.cmbVotoAggiungiVoto.TabIndex = 22;
@@ -341,7 +342,7 @@
             // lblVotoAggiungiVoto
             // 
             this.lblVotoAggiungiVoto.AutoSize = true;
-            this.lblVotoAggiungiVoto.Location = new System.Drawing.Point(308, 146);
+            this.lblVotoAggiungiVoto.Location = new System.Drawing.Point(769, 151);
             this.lblVotoAggiungiVoto.Name = "lblVotoAggiungiVoto";
             this.lblVotoAggiungiVoto.Size = new System.Drawing.Size(29, 13);
             this.lblVotoAggiungiVoto.TabIndex = 23;
@@ -349,7 +350,7 @@
             // 
             // btnAggiungiAggiungiVoto
             // 
-            this.btnAggiungiAggiungiVoto.Location = new System.Drawing.Point(370, 198);
+            this.btnAggiungiAggiungiVoto.Location = new System.Drawing.Point(831, 203);
             this.btnAggiungiAggiungiVoto.Name = "btnAggiungiAggiungiVoto";
             this.btnAggiungiAggiungiVoto.Size = new System.Drawing.Size(75, 23);
             this.btnAggiungiAggiungiVoto.TabIndex = 24;
@@ -360,7 +361,7 @@
             // lblInserisciStudente
             // 
             this.lblInserisciStudente.AutoSize = true;
-            this.lblInserisciStudente.Location = new System.Drawing.Point(65, 245);
+            this.lblInserisciStudente.Location = new System.Drawing.Point(639, 249);
             this.lblInserisciStudente.Name = "lblInserisciStudente";
             this.lblInserisciStudente.Size = new System.Drawing.Size(89, 13);
             this.lblInserisciStudente.TabIndex = 25;
@@ -370,7 +371,7 @@
             // lblNomeInserisciStudente
             // 
             this.lblNomeInserisciStudente.AutoSize = true;
-            this.lblNomeInserisciStudente.Location = new System.Drawing.Point(34, 273);
+            this.lblNomeInserisciStudente.Location = new System.Drawing.Point(608, 277);
             this.lblNomeInserisciStudente.Name = "lblNomeInserisciStudente";
             this.lblNomeInserisciStudente.Size = new System.Drawing.Size(35, 13);
             this.lblNomeInserisciStudente.TabIndex = 26;
@@ -379,7 +380,7 @@
             // lblCognomeInserisciStudente
             // 
             this.lblCognomeInserisciStudente.AutoSize = true;
-            this.lblCognomeInserisciStudente.Location = new System.Drawing.Point(34, 302);
+            this.lblCognomeInserisciStudente.Location = new System.Drawing.Point(608, 306);
             this.lblCognomeInserisciStudente.Name = "lblCognomeInserisciStudente";
             this.lblCognomeInserisciStudente.Size = new System.Drawing.Size(52, 13);
             this.lblCognomeInserisciStudente.TabIndex = 27;
@@ -388,7 +389,7 @@
             // lblClasseInserisciStudente
             // 
             this.lblClasseInserisciStudente.AutoSize = true;
-            this.lblClasseInserisciStudente.Location = new System.Drawing.Point(37, 338);
+            this.lblClasseInserisciStudente.Location = new System.Drawing.Point(611, 342);
             this.lblClasseInserisciStudente.Name = "lblClasseInserisciStudente";
             this.lblClasseInserisciStudente.Size = new System.Drawing.Size(32, 13);
             this.lblClasseInserisciStudente.TabIndex = 29;
@@ -397,7 +398,7 @@
             // lblMatricolaInserisciStudente
             // 
             this.lblMatricolaInserisciStudente.AutoSize = true;
-            this.lblMatricolaInserisciStudente.Location = new System.Drawing.Point(37, 368);
+            this.lblMatricolaInserisciStudente.Location = new System.Drawing.Point(611, 372);
             this.lblMatricolaInserisciStudente.Name = "lblMatricolaInserisciStudente";
             this.lblMatricolaInserisciStudente.Size = new System.Drawing.Size(50, 13);
             this.lblMatricolaInserisciStudente.TabIndex = 30;
@@ -405,14 +406,14 @@
             // 
             // txtNomeInserisciStudente
             // 
-            this.txtNomeInserisciStudente.Location = new System.Drawing.Point(68, 270);
+            this.txtNomeInserisciStudente.Location = new System.Drawing.Point(642, 274);
             this.txtNomeInserisciStudente.Name = "txtNomeInserisciStudente";
             this.txtNomeInserisciStudente.Size = new System.Drawing.Size(100, 20);
             this.txtNomeInserisciStudente.TabIndex = 32;
             // 
             // txtCognomeInserisciStudente
             // 
-            this.txtCognomeInserisciStudente.Location = new System.Drawing.Point(86, 300);
+            this.txtCognomeInserisciStudente.Location = new System.Drawing.Point(660, 304);
             this.txtCognomeInserisciStudente.Name = "txtCognomeInserisciStudente";
             this.txtCognomeInserisciStudente.Size = new System.Drawing.Size(100, 20);
             this.txtCognomeInserisciStudente.TabIndex = 33;
@@ -420,21 +421,21 @@
             // cmbClasseInserisciStudente
             // 
             this.cmbClasseInserisciStudente.FormattingEnabled = true;
-            this.cmbClasseInserisciStudente.Location = new System.Drawing.Point(76, 330);
+            this.cmbClasseInserisciStudente.Location = new System.Drawing.Point(650, 334);
             this.cmbClasseInserisciStudente.Name = "cmbClasseInserisciStudente";
             this.cmbClasseInserisciStudente.Size = new System.Drawing.Size(48, 21);
             this.cmbClasseInserisciStudente.TabIndex = 35;
             // 
             // txtMatricolaInserisciStudente
             // 
-            this.txtMatricolaInserisciStudente.Location = new System.Drawing.Point(89, 365);
+            this.txtMatricolaInserisciStudente.Location = new System.Drawing.Point(663, 369);
             this.txtMatricolaInserisciStudente.Name = "txtMatricolaInserisciStudente";
             this.txtMatricolaInserisciStudente.Size = new System.Drawing.Size(100, 20);
             this.txtMatricolaInserisciStudente.TabIndex = 36;
             // 
             // btnInserisciInserisciStudente
             // 
-            this.btnInserisciInserisciStudente.Location = new System.Drawing.Point(72, 391);
+            this.btnInserisciInserisciStudente.Location = new System.Drawing.Point(646, 395);
             this.btnInserisciInserisciStudente.Name = "btnInserisciInserisciStudente";
             this.btnInserisciInserisciStudente.Size = new System.Drawing.Size(75, 23);
             this.btnInserisciInserisciStudente.TabIndex = 37;
@@ -442,11 +443,21 @@
             this.btnInserisciInserisciStudente.UseVisualStyleBackColor = true;
             this.btnInserisciInserisciStudente.Click += new System.EventHandler(this.btnInserisciStudente_Click);
             // 
+            // btnVisualizzaStudenti
+            // 
+            this.btnVisualizzaStudenti.Location = new System.Drawing.Point(33, 69);
+            this.btnVisualizzaStudenti.Name = "btnVisualizzaStudenti";
+            this.btnVisualizzaStudenti.Size = new System.Drawing.Size(150, 30);
+            this.btnVisualizzaStudenti.TabIndex = 38;
+            this.btnVisualizzaStudenti.Text = "Visualizza Studenti";
+            this.btnVisualizzaStudenti.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1149, 592);
+            this.ClientSize = new System.Drawing.Size(1008, 561);
+            this.Controls.Add(this.btnVisualizzaStudenti);
             this.Controls.Add(this.btnInserisciInserisciStudente);
             this.Controls.Add(this.txtMatricolaInserisciStudente);
             this.Controls.Add(this.cmbClasseInserisciStudente);
@@ -531,6 +542,7 @@
         private System.Windows.Forms.ComboBox cmbClasseInserisciStudente;
         private System.Windows.Forms.TextBox txtMatricolaInserisciStudente;
         private System.Windows.Forms.Button btnInserisciInserisciStudente;
+        private System.Windows.Forms.Button btnVisualizzaStudenti;
     }
 }
 

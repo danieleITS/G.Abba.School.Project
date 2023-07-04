@@ -254,5 +254,6 @@ namespace ScuoleGestione
             txtMatricolaInserisciStudente.Visible = true;
             btnInserisciInserisciStudente.Visible = true;
         }
+
     }
 }
