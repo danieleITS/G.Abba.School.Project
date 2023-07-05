@@ -75,7 +75,6 @@
             this.lblTestConnessioneDB.TabIndex = 2;
             this.lblTestConnessioneDB.Text = "Test Connessione Database";
             this.lblTestConnessioneDB.Visible = false;
-            this.lblTestConnessioneDB.Click += new System.EventHandler(this.lblTestConnessioneDB_Click);
             // 
             // btnVisualizzaRegistro
             // 
@@ -151,7 +150,7 @@
             this.btn1.Text = "Cerca";
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Visible = false;
-            this.btn1.Click += new System.EventHandler(this.btnCerca_Click);
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // lbl4
             // 
@@ -277,44 +276,6 @@
             // cmb2
             // 
             this.cmb2.FormattingEnabled = true;
-            this.cmb2.Items.AddRange(new object[] {
-            "10",
-            "10-",
-            "9½",
-            "9+",
-            "9",
-            "9-",
-            "8½",
-            "8+",
-            "8",
-            "8-",
-            "7½",
-            "7+",
-            "7",
-            "7-",
-            "6½",
-            "6+",
-            "6",
-            "6-",
-            "5½",
-            "5+",
-            "5",
-            "5-",
-            "4½",
-            "4+",
-            "4",
-            "4-",
-            "3½",
-            "3+",
-            "3",
-            "3-",
-            "2½",
-            "2+",
-            "2",
-            "2-",
-            "1½",
-            "1+",
-            "1"});
             this.cmb2.Location = new System.Drawing.Point(117, 285);
             this.cmb2.Name = "cmb2";
             this.cmb2.Size = new System.Drawing.Size(222, 21);
